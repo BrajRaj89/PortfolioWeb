@@ -12,6 +12,9 @@
 <link rel="stylesheet" href="styles.css">
 <script src="script.js"></script>
 </head>
+<button id="backToTop" aria-label="Back to top">
+  ↑
+</button>
 <body>
 <nav class="navbar">
   <div class="nav-links" id="navLinks">
@@ -38,7 +41,6 @@
 
     <h2 class="typing hero-typing"></h2>
     <h3 class="role hero-role">Java Full Stack Developer</h3>
-
     <p class="hero-desc">
       Final-year B.Tech CSE student focused on building scalable Java & Web
       applications with clean backend architecture and modern UI.
@@ -64,7 +66,7 @@
   </div>
   <div class="profile-wrap reveal">
     <div class="profile">
-      <img src="profile.jpg" alt="Profile"/>
+      <img src="profile.png" alt="Profile"/>
     </div>
   </div>
 </section>
@@ -81,7 +83,6 @@ B.Tech in Computer Science & Engineering — Mahakal Institute of Technology, Uj
 </p>
   </div>
 </section>
-
 <section id="skills" class="reveal">
   <h2 class="heading">Skills</h2>
 
@@ -117,24 +118,16 @@ B.Tech in Computer Science & Engineering — Mahakal Institute of Technology, Uj
     <div class="skills-grid">
       <div class="skill"><i class="fa-brands fa-git-alt fa-2x" style="color:#f05032"></i><p>Git</p></div>
       <div class="skill"><i class="fa-brands fa-github fa-2x" style="color:#ffffff"></i><p>GitHub</p></div>
-      <div class="skill"><i class="fa-solid fa-laptop-code fa-2x" style="color:#60a5fa"></i><p>IntelliJ</p></div>
-      <div class="skill"><i class="fa-solid fa-code fa-2x" style="color:#22c55e"></i><p>VS Code</p></div>
-      </div>
-      </div>
-      <div class="skill-category">
-    <div class="skills-grid">
       <div class="skill"><i class="fa-brands fa-docker fa-2x" style="color:#2496ed"></i><p>Docker</p></div>
       <div class="skill"><i class="fa-brands fa-linux fa-2x" style="color:#fcc624"></i><p>WSL</p></div>
-      <div class="skill"><i class="fa-solid fa-paper-plane fa-2x" style="color:#ff6c37"></i><p>Postman</p></div>
-      <div class="skill"><i class="fa-solid fa-screwdriver-wrench fa-2x"></i><p>ARC</p></div>
-    </div>
-  </div>
+      </div>
+      </div>
 <div class="skill-category">
 <div class="skills-grid">
 <div class="skill"><i class="devicon-tomcat-line colored fa-2x"></i><p>Apache Tomcat</p></div>
 <div class="skill"><i class="devicon-maven-plain colored fa-2x"></i><p>Maven</p></div>
 <div class="skill"><i class="devicon-gradle-plain colored fa-2x"></i><p>Gradle</p></div>
-<div class="skill"><i class="devicon-mysql-plain colored fa-2x"></i><p>MySQL Workbanch</p></div>
+<div class="skill"><i class="fa-solid fa-paper-plane fa-2x" style="color:#ff6c37"></i><p>Postman</p></div>
 </div>
 </div>
 </section>
@@ -332,10 +325,12 @@ B.Tech in Computer Science & Engineering — Mahakal Institute of Technology, Uj
 </section>
 <section id="dsa">
 <h2>Data Structures & Algorithms</h2>
+<div class="leetcode-wrapper">
   <img 
     src="https://leetcard.jacoblin.cool/brajraj_devda?theme=dark&font=Karma&ext=heatmap&border=2"
     alt="LeetCode Stats"
   />
+  </div>
 </section>
 
 <section id="experience" class="reveal">
@@ -352,7 +347,7 @@ B.Tech in Computer Science & Engineering — Mahakal Institute of Technology, Uj
         <p>
         Contributed to 4–5 open-source repositories, improving code quality, documentation, UI/UX, and feature 
 implementation. 
-c:\Users\sanju\Downloads\Video Project 2.mp4Collaborated with mentors and contributors, securing a Top 25 position among participants. 
+Collaborated with mentors and contributors, securing a Top 25 position among participants. 
         </p>
         <div class="tech-stack">
           <span>Java</span>
@@ -364,15 +359,10 @@ c:\Users\sanju\Downloads\Video Project 2.mp4Collaborated with mentors and contri
     </div>
   </div>
 </section>
-<section id="certifications" class="reveal">
- <h2 class="heading">Certifications</h2>
-<div class="cert-slider">
-    <button class="cert-btn left" id="certPrev">&#10094;</button>
-
-    <div class="cert-viewport">
-      <div class="cert-track">
-      
-        <div class="cert-card">
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="cert-container">
+  <div class="cert-card">
           <img src="cert1.jpg" alt="Certificate 1">
           <p>Java Programming </p>
         </div>
@@ -401,11 +391,7 @@ c:\Users\sanju\Downloads\Video Project 2.mp4Collaborated with mentors and contri
         <div class="cert-card">
           <img src="cert7.jpg" alt="Certificate 3">
           <p>JavaScript Programming</p>
-          </div>
-      </div>
-    </div>
-
-    <button class="cert-btn right" id="certNext">&#10095;</button>
+  </div>  
   </div>
 </section>
 <section id="contact" class="reveal">
@@ -418,20 +404,7 @@ c:\Users\sanju\Downloads\Video Project 2.mp4Collaborated with mentors and contri
         Have a project, opportunity, or question?  
         Send me a message and I’ll get back to you.
       </p>
-
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/brajraj-devda-67742532a" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/BrajRaj89" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://leetcode.com/u/brajraj_devda/" target="_blank">
-          <i class="fas fa-code"></i>
-        </a>
-      </div>
     </div>
-
     <form id="contact-form" class="contact-form">
       <div class="form-group">
         <label>Name</label>
@@ -445,9 +418,19 @@ c:\Users\sanju\Downloads\Video Project 2.mp4Collaborated with mentors and contri
         <label>Message</label>
         <textarea name="message" rows="5" required></textarea>
       </div>
-
       <button type="submit" class="send-btn">Send Message</button>
     </form>
+    <div class="contact-links">
+        <a href="https://www.linkedin.com/in/brajraj-devda-67742532a" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/BrajRaj89" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://leetcode.com/u/brajraj_devda/" target="_blank">
+          <i class="fas fa-code"></i>
+        </a>
+      </div>
   </div>
 </section>
 <footer style="text-align:center;" >© 2025 Brajraj Devda</footer>
@@ -493,25 +476,6 @@ const menuToggle = document.getElementById("menuToggle");
     })
   });
 
-let certIndex = 0;
-const certWidth = 280;
-const totalCerts = $('.cert-card').length;
-
-$('#certNext').on('click', function () {
-  certIndex++;
-  if (certIndex >= totalCerts) {
-    certIndex = 0;
-  }
-  $('.cert-track').css('transform', `translateX(-${certIndex * certWidth}px)`);
-});
-
-$('#certPrev').on('click', function () {
-  certIndex--;
-  if (certIndex < 0) {
-    certIndex = totalCerts - 1;
-  }
-  $('.cert-track').css('transform', `translateX(-${certIndex * certWidth}px)`);
-});
 
 const revealItems = document.querySelectorAll('.timeline-item');
 
@@ -549,6 +513,15 @@ document.querySelectorAll("video").forEach(video => {
   video.addEventListener("contextmenu", e => e.preventDefault());
 });
 
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  backToTop.style.display = window.scrollY > 400 ? "grid" : "none";
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 </script>
 </body>
 </html>
